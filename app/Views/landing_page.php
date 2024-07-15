@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .hero {
-            background: url('<?= base_url('images/bg-lake-toba.jpg') ?>') no-repeat center center/cover;
             color: black;
             text-align: center;
             padding: 100px 0;
@@ -40,13 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Data Wisata</a>
+                        <a class="nav-link" href="#datawisata">Data Wisata</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('login') ?>">Login Admin</a>
+                        <a class="nav-link" href="<?= base_url('public/login') ?>">Login Admin</a>
                     </li>
                 </ul>
             </div>
@@ -54,13 +53,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" style="background-image: url('images/bg-lake-toba.jpg'); background-size: cover; background-position: center;">
         <div class="container">
             <h1>Selamat Datang di Website Caldera Insight</h1>
             <p>Jelajahi Keindahan Wisata Caldera disini.</p>
-            <a href="#features" class="btn btn-primary btn-lg">Pelajari Selengkapnya</a>
+            <a href="#datawisata" class="btn btn-primary btn-lg">Pelajari Selengkapnya</a>
         </div>
     </section>
+
 
      <!-- Peta Lokasi Section -->
      <section class="petalokasi">
@@ -70,8 +70,8 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-5">
+    <!-- Data Wisata Section -->
+    <section id="datawisata" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">Data Wisata</h2>
             <div class="row">

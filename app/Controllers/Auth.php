@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+
 class Auth extends BaseController
 {
     public function login()
@@ -20,6 +21,11 @@ class Auth extends BaseController
         } else {
             return redirect()->back()->with('error', 'Invalid login credentials');
         }
+    }
+
+    public function dashboard()
+    {
+        return view('dashboard');
     }
 
 }
