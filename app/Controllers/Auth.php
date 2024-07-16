@@ -17,7 +17,7 @@ class Auth extends BaseController
 
         // Validasi login (contoh sederhana, ganti dengan validasi sebenarnya)
         if ($username == 'admin' && $password == 'password') {
-            return redirect()->to(base_url('/admin/dashboard'));
+            return redirect()->to(base_url('dashboard'));
         } else {
             return redirect()->back()->with('error', 'Invalid login credentials');
         }

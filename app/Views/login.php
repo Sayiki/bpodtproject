@@ -25,7 +25,7 @@
     <div class="container login-container">
         <div class="login-form">
             <h3 class="text-center">Login Admin</h3>
-            <form action="<?= base_url('auth/validate_login') ?>" method="post">
+            <form action="<?= base_url('validate_login') ?>" method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
                     <input type="text" class="form-control" id="username" name="username" required>

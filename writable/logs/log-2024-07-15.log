@@ -1,0 +1,140 @@
+CRITICAL - 2024-07-15 02:49:58 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 52.
+ 1 APPPATH\Views\dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:50:05 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 52.
+ 1 APPPATH\Views\dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:50:32 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 52.
+ 1 APPPATH\Views\dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:51:03 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 52.
+ 1 APPPATH\Views\dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:51:37 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 52.
+ 1 APPPATH\Views\dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 52)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:52:48 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 56.
+ 1 APPPATH\Views\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:53:01 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 56.
+ 1 APPPATH\Views\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:53:08 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 56.
+ 1 APPPATH\Views\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:55:01 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 50.
+ 1 APPPATH\Views\dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 50)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-15 02:55:14 --> ErrorException: Undefined variable $admin_name
+[Method: GET, Route: dashboard]
+in APPPATH\Views\dashboard.php on line 50.
+ 1 APPPATH\Views\dashboard.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin_name', 'D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php', 50)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\PHPmyAdminYesa\\htdocs\\bpodtproject\\app\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\Auth.php(28): view('dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
