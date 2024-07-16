@@ -43,22 +43,45 @@
             color: #ff0000; /* Warna untuk kata "Insight" */
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="sidebar">
         <h3>Caldera</h3>
-        <a href="<?= base_url('public/home'); ?>">Home Dashboard</a>
-        <a href="<?= base_url('public/tambah_data'); ?>">Tambah Data</a>
-        <a href="<?= base_url('public/data_wisata'); ?>">Data Wisata</a>
+        <a href="#" id="home-dashboard">Home Dashboard</a>
+        <a href="#" id="tambah-data">Tambah Data</a>
+        <a href="#" id="tampil-data">Data Wisata</a>
         <a href="<?= base_url('logout'); ?>" class="btn btn-danger mt-3">Logout</a>
     </div>
     <div class="content">
-        <div class="container mt-5">
-            <h1>Welcome to Admin Dashboard</h1>
+        <div class="container mt-5" id="main-content">
+            <h1>Welcome to Admin Dashboard - Caldera Insight</h1>
             <p>Manage your website content here.</p>
         </div>
     </div>
     
+    <script>
+        $(document).ready(function() {
+            $('#tambah-data').click(function(e) {
+                e.preventDefault();
+                $('#main-content').load('<?= base_url('tambah_data'); ?>');
+            });
+
+            $('#tampil-data').click(function(e) {
+                e.preventDefault();
+                $('#main-content').load('<?= base_url('tampil_data'); ?>');
+            });    
+
+            $('#home-dashboard').click(function(e) {
+                e.preventDefault();
+                $('#main-content').html(`
+                    <h1>Welcome to Admin Dashboard</h1>
+                    <p>Manage your website content here.</p>
+                `);
+            });
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

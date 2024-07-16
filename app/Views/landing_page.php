@@ -59,7 +59,7 @@
         <!-- Hero Section -->
         <section class="hero" style="background-image: url('public/images/bg-lake-toba.jpg'); background-size: cover; background-position: center;">
             <div class="container">
-                <h1>Selamat Datang di Website <span style="color: #ffffff;">Caldera</span> <span style="color: #ff0000;">Insight</span></h1>
+                <h1>Selamat Datang di <span style="color: #ffffff;">Caldera</span> <span style="color: #ff0000;">Insight</span></h1>
                 <p>Jelajahi Keindahan Wisata Caldera disini.</p>
                 <a href="#datawisata" class="btn btn-primary btn-lg">Pelajari Selengkapnya</a>
             </div>
@@ -86,7 +86,6 @@
                                     <th>No</th>
                                     <th>Nama Wisata</th>
                                     <th>Deskripsi</th>
-                                    <th>Alamat</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -97,7 +96,6 @@
                                             <td><?= $key + 1 ?></td>
                                             <td><?= $item['nama'] ?></td>
                                             <td><?= $item['deskripsi'] ?></td>
-                                            <td><?= $item['alamat'] ?></td>
                                             <td>
                                                 <a href="<?= base_url('wisata/detail/' . $item['id']) ?>" class="btn btn-info btn-sm">Detail &Lokasi</a>
                                             </td>
