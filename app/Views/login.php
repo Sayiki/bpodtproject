@@ -25,6 +25,9 @@
     <div class="container login-container">
         <div class="login-form">
             <h3 class="text-center">Login Admin</h3>
+            <?php if(session()->getFlashdata('msg')): ?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+            <?php endif; ?>
             <form action="<?= base_url('validate_login') ?>" method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
