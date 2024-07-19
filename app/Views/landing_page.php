@@ -80,7 +80,7 @@
                 <h2 class="text-center mb-5">Data Wisata</h2>
                 <div class="row">
                     <div class="col-md-12">
-                    <table class="table table-bordered">
+                        <table class="table table-bordered">
                             <thead>
                                 <tr>
                                     <th>No</th>
@@ -94,16 +94,16 @@
                                     <?php foreach ($wisata as $key => $item): ?>
                                         <tr>
                                             <td><?= $key + 1 ?></td>
-                                            <td><?= $item['nama'] ?></td>
+                                            <td><?= $item['nama_wisata'] ?></td>
                                             <td><?= $item['deskripsi'] ?></td>
                                             <td>
-                                                <a href="<?= base_url('wisata/detail/' . $item['id']) ?>" class="btn btn-info btn-sm">Detail &Lokasi</a>
+                                                <a href="<?= base_url('wisata/detail/' . $item['wisata_id']) ?>" class="btn btn-info btn-sm">Details</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
                                 <?php else: ?>
                                     <tr>
-                                        <td colspan="5" class="text-center">No data available</td>
+                                        <td colspan="4" class="text-center">No data available</td>
                                     </tr>
                                 <?php endif; ?>
                             </tbody>
@@ -112,6 +112,7 @@
                 </div>
             </div>
         </section>
+
 
         <!-- Testimonials Section -->
         <section id="testimonials" class="py-5 bg-light">
