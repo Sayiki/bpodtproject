@@ -51,7 +51,7 @@
         <a href="#" id="home-dashboard">Home Dashboard</a>
         <a href="#" id="tambah-data">Tambah Data</a>
         <a href="#" id="tampil-data">Data Wisata</a>
-        <a href="<?= base_url('logout'); ?>" class="btn btn-danger mt-3">Logout</a>
+        <a href="<?= base_url(''); ?>" class="btn btn-danger mt-3">Logout</a>
     </div>
     <div class="content">
         <div class="container mt-5" id="main-content">
