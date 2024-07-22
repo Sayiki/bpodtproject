@@ -15,8 +15,8 @@ $routes->get('logout', 'Auth::logout');
 $routes->get('check_password_hash', 'Auth::checkPasswordHash');
 $routes->get('test_password_hash', 'Auth::testPasswordHash');
 
-$routes->get('tambah_data', 'DataWisata::index');
-$routes->get('tampil_data', 'DataWisata::index2');
+$routes->get('tambah_data', 'WisataController::index');
+$routes->get('tampil_data', 'WisataController::index2');
 
 $routes->get('/wisata', 'WisataController::index');
 
