@@ -26,6 +26,11 @@ class CreateWisataTable extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '255',
             ],
+            'image' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+                'null' => true,
+            ],
             'peta' => [
                 'type' => 'VARCHAR',
                 'constraint' => '255',

@@ -15,8 +15,11 @@ $routes->get('logout', 'Auth::logout');
 $routes->get('check_password_hash', 'Auth::checkPasswordHash');
 $routes->get('test_password_hash', 'Auth::testPasswordHash');
 
-$routes->get('tambah_data', 'WisataController::index');
+$routes->get('form_data', 'WisataController::index');
 $routes->get('tampil_data', 'WisataController::index2');
+$routes->post('tambah_data', 'WisataController::tambahData');
 
-$routes->get('/wisata', 'WisataController::index');
-
+$routes->get('wisata', 'WisataController::index');
+$routes->get('wisata/edit/(:num)', 'WisataController::edit/$1');
+$routes->post('wisata/update/(:num)', 'WisataController::update/$1');
+$routes->post('wisata/delete/(:num)', 'WisataController::delete/$1');
