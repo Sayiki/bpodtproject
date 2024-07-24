@@ -41,10 +41,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#datawisata">Data Wisata</a>
+                            <a class="nav-link" href="#testimonials">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                            <a class="nav-link" href="#datawisata">Data Wisata</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('login') ?>">Login Admin</a>
@@ -74,6 +74,18 @@
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Jangkauan Lokasi Wisata</h2>
+                <div class="row">
+                    <p>
+                        Wisata yang masuk dalam jangkauan dari website ini meliputi Wisata Kaldera Toba yang menjadi titik utama pembahasan dari website ini. Lokasi dari wisata ini juga menyangkut wilayah yang sesuai dengan tugas BPODT secara Otoritatif. Lokasi tersebut adalah lokasi-lokasi yang berhubungan langsung dengan wilayah Cladera yang djadikan sebagai tempat wisata dengan luas yang diketahui yaitu 386,72 ha. Dalam website ini juga nantinya akan selalu melakukan update terhadap situasi yang terupdate terkait wahana yang ada di Caldera dari waktu ke waktu.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Data Wisata Section -->
         <section id="datawisata" class="py-5">
             <div class="container">
@@ -97,7 +109,7 @@
                                             <td><?= $item['nama_wisata'] ?></td>
                                             <td><?= $item['deskripsi'] ?></td>
                                             <td>
-                                                <a href="<?= base_url('wisata/detail/' . $item['wisata_id']) ?>" class="btn btn-info btn-sm">Details</a>
+                                                <a href="<?= base_url('detail' . $item['wisata_id']) ?>" class="btn btn-info btn-sm">Details</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -113,33 +125,6 @@
             </div>
         </section>
 
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Testimonials</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">"This is the best service I've ever used!"</p>
-                            <footer class="blockquote-footer">Happy Customer</footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-md-4">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">"Amazing experience and great support."</p>
-                            <footer class="blockquote-footer">Satisfied Client</footer>
-                        </blockquote>
-                    </div>
-                    <div class="col-md-4">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">"I highly recommend this to everyone."</p>
-                            <footer class="blockquote-footer">Loyal User</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- Footer -->
         <footer id="contact" class="py-5 bg-dark text-white">

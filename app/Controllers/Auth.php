@@ -15,7 +15,7 @@ class Auth extends BaseController
     {
         $session = session();
         $adminModel = new AdminModel();
-        $username = $this->request->getVar('username');
+        $username = $this->request->getVar('username');      
         $password = $this->request->getVar('password');
 
         
@@ -74,7 +74,7 @@ class Auth extends BaseController
         $admin = $adminModel->find(1); // Assuming the admin id is 1
         
         if($admin){
-            $newPassword = 'admin999*'; // This is the password you want to set
+            $newPassword = 'admin999'; 
             $hashedPassword = $this->hashPassword($newPassword);
             $adminModel->update($admin['id'], ['password' => $hashedPassword]);
             echo "Password updated successfully";
