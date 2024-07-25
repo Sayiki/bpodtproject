@@ -1,4 +1,3 @@
-<!-- app/Views/layout.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,37 +62,47 @@
     </div>
     <div class="container mt-5">
         <h2 class="mb-4">Data Wisata - Caldera Insight</h2>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama Wisata</th>
-                    <th>Deskripsi</th>
-                    <th>Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if (!empty($wisata) && is_array($wisata)): ?>
-                    <?php foreach ($wisata as $key => $item): ?>
-                        <tr>
-                            <td><?= $key + 1 ?></td>
-                            <td><?= $item['nama_wisata'] ?></td>
-                            <td><?= $item['deskripsi'] ?></td>
-                            <td>
-                                <button class="btn btn-primary btn-sm edit-btn"
-                                    data-id="<?= $item['wisata_id'] ?>">Edit</button>
-                                <a href="<?= base_url('wisata/delete/' . $item['wisata_id']) ?>" class="btn btn-danger btn-sm"
-                                    onclick="return confirm('Are you sure you want to delete this item?')">Delete</a>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                <?php else: ?>
+        <form id="deleteForm" action="<?= base_url('wisata/delete_multiple') ?>" method="post">
+            <div class="mb-3">
+                <button type="submit" class="btn btn-danger" id="deleteSelected">Delete Selected</button>
+            </div>
+            <table class="table table-bordered">
+                <thead>
                     <tr>
-                        <td colspan="4" class="text-center">No data available</td>
+                        <th><input type="checkbox" id="selectAll"></th>
+                        <th>No</th>
+                        <th>Nama Wisata</th>
+                        <th>Deskripsi</th>
+                        <th>Aksi</th>
                     </tr>
-                <?php endif; ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php if (!empty($wisata) && is_array($wisata)): ?>
+                        <?php foreach ($wisata as $key => $item): ?>
+                            <tr>
+                                <td><input type="checkbox" name="delete[]" value="<?= $item['wisata_id'] ?>"></td>
+                                <td><?= $pager->getPerPage() * ($pager->getCurrentPage() - 1) + $key + 1 ?></td>
+                                <td><?= $item['nama_wisata'] ?></td>
+                                <td><?= $item['deskripsi'] ?></td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm edit-btn"
+                                        data-id="<?= $item['wisata_id'] ?>">Edit</button>
+                                    <button class="btn btn-danger btn-sm delete-btn"
+                                        data-id="<?= $item['wisata_id'] ?>">Delete</button>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td colspan="5" class="text-center">No data available</td>
+                        </tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
+        </form>
+        <nav aria-label="Page navigation">
+    <?= $pager->links('custom_pager') ?>
+</nav>
     </div>
 
     <!-- Edit Modal -->
@@ -205,7 +214,52 @@
                     }
                 });
             });
+
+            $('.delete-btn').on('click', function () {
+                var id = $(this).data('id');
+                console.log('Delete button clicked for ID:', id); // Add this line to log the ID
+
+                if (confirm('Are you sure you want to delete this item?')) {
+                    $.ajax({
+                        url: '<?= base_url('wisata/delete/') ?>' + id,
+                        type: 'POST',
+                        dataType: 'json',
+                        success: function (response) {
+                            console.log('Delete response:', response); // Add this line to log the response
+                            if (response.success) {
+                                location.reload();
+                            } else {
+                                alert('Failed to delete item');
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('Delete error:', error);
+                            console.log('XHR status:', status); // Add this line for more error details
+                            console.log('XHR response:', xhr.responseText); // Add this line to see the server's response
+                            alert('An error occurred while deleting the item');
+                        }
+                    });
+                }
+            });
+
+            // Select All checkbox
+            $('#selectAll').on('change', function () {
+                $('input[name="delete[]"]').prop('checked', $(this).is(':checked'));
+            });
+
+            // Delete selected items
+            $('#deleteSelected').on('click', function (e) {
+                e.preventDefault();
+                if ($('input[name="delete[]"]:checked').length > 0) {
+                    if (confirm('Are you sure you want to delete the selected items?')) {
+                        $('#deleteForm').submit();
+                    }
+                } else {
+                    alert('Please select at least one item to delete.');
+                }
+            });
         });
+
     </script>
 
 

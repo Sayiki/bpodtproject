@@ -23,3 +23,4 @@ $routes->get('wisata', 'WisataController::index');
 $routes->get('wisata/edit/(:num)', 'WisataController::edit/$1');
 $routes->post('wisata/update/(:num)', 'WisataController::update/$1');
 $routes->post('wisata/delete/(:num)', 'WisataController::delete/$1');
+$routes->post('wisata/delete_multiple', 'WisataController::delete_multiple');
