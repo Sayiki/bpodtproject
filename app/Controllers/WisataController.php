@@ -198,5 +198,17 @@ class WisataController extends BaseController
         }
     }
 
+    public function detail($nama_wisata)
+    {
+        $wisataModel = new \App\Models\WisataModel();
+        $data['wisata'] = $wisataModel->where('nama_wisata', urldecode($nama_wisata))->first();
+
+        if (empty($data['wisata'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the wisata item: ' . $nama_wisata);
+        }
+
+        return view('wisata_detail', $data);
+    }
+
 
 }

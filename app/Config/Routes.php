@@ -19,6 +19,7 @@ $routes->get('form_data', 'WisataController::index');
 $routes->get('tampil_data', 'WisataController::index2');
 $routes->post('tambah_data', 'WisataController::tambahData');
 
+$routes->get('detail/(:segment)', 'WisataController::detail/$1');
 $routes->get('wisata', 'WisataController::index');
 $routes->get('wisata/edit/(:num)', 'WisataController::edit/$1');
 $routes->post('wisata/update/(:num)', 'WisataController::update/$1');
