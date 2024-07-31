@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Caldera Insight</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <style>
         .hero {
             color: black;
@@ -61,8 +62,6 @@
         </div>
     </nav>
 
-
-
     <!-- Hero Section -->
     <section class="hero"
         style="background-image: url('public/images/bg-lake-toba.jpg'); background-size: cover; background-position: center;">
@@ -73,7 +72,6 @@
             <a href="#datawisata" class="btn btn-primary btn-lg">Pelajari Selengkapnya</a>
         </div>
     </section>
-
 
     <!-- Peta Lokasi Section -->
     <section class="petalokasi">
@@ -167,26 +165,25 @@
     <!-- Footer -->
     <footer id="contact" class="py-5 bg-dark text-white">
         <div class="container text-center">
-            <p>Contact us at info@mywebsite.com</p>
-            <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+            <p>Contact us at info@bpodt.id</p>
+            <p>&copy; 2024 BPODT. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        function initMap() {
-            var location = { lat: 2.707, lng: 98.940 };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
+        document.addEventListener('DOMContentLoaded', function () {
+            var map = L.map('map').setView([2.606848, 98.945844], 10); // Center on Caldera Toba
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            var marker = L.marker([2.606848, 98.945844]).addTo(map);
+            marker.bindPopup("<b>Caldera Toba</b>").openPopup();
+        });
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 </body>
 
 </html>

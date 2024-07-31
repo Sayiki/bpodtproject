@@ -9,6 +9,9 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+use App\Models\WisataModel;
+use App\Models\VisitorModel;
+
 /**
  * Class BaseController
  *
@@ -21,6 +24,7 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+
     /**
      * Instance of the main Request object.
      *
@@ -46,13 +50,30 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
     {
-        // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
-        // Preload any models, libraries, etc, here.
-
-        // E.g.: $this->session = \Config\Services::session();
+        $this->trackVisit();
     }
+
+    private function trackVisit()
+    {
+        // Get the current URI
+        $uri = service('uri');
+
+        // Check if we're not on an admin page
+        if (!$this->isAdminPage($uri)) {
+            $visitorModel = new VisitorModel();
+            $visitorModel->incrementDailyVisits();
+        }
+    }
+
+    private function isAdminPage($uri)
+    {
+        // Adjust this condition based on your admin URL structure
+        return $uri->getSegment(1) === 'admin' || $uri->getSegment(1) === 'dashboard' || $uri->getSegment(1) === 'form_data' || $uri->getSegment(1) === 'tampil_data';
+    }
+
+
 }
