@@ -8,19 +8,25 @@ class VisitorModel extends Model
 {
     protected $table = 'visitors';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['visit_date', 'visit_count'];
+    protected $allowedFields = ['visit_date', 'visit_count', 'ip_address'];
 
-    public function incrementDailyVisits()
+    public function incrementDailyVisits($ipAddress)
     {
         $today = date('Y-m-d');
-        $existingRecord = $this->where('visit_date', $today)->first();
+        $existingRecord = $this->where('visit_date', $today)
+                               ->where('ip_address', $ipAddress)
+                               ->first();
 
         if ($existingRecord) {
-            $this->where('visit_date', $today)
-                ->set('visit_count', 'visit_count + 1', false)
-                ->update();
+            // IP already visited today, do nothing
+            return;
         } else {
-            $this->insert(['visit_date' => $today, 'visit_count' => 1]);
+            // New visit for this IP today
+            $this->insert([
+                'visit_date' => $today,
+                'visit_count' => 1,
+                'ip_address' => $ipAddress
+            ]);
         }
     }
 

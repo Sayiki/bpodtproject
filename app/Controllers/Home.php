@@ -9,9 +9,10 @@ class Home extends BaseController
     public function index(): string
     {
         $model = new WisataModel();
+        $ipAddress = $this->request->getIPAddress(); // Get the visitor's IP address
         $data['wisata'] = $model->findAll();
         $visitorModel = new \App\Models\VisitorModel();
-        $visitorModel->incrementDailyVisits();
+        $visitorModel->incrementDailyVisits($ipAddress);
 
         return view('landing_page', $data);
     }

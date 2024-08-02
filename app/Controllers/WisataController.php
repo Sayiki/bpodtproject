@@ -19,6 +19,11 @@ class WisataController extends BaseController
 
     public function index2()
     {
+        $session = session();
+        if (!$session->get('isLoggedIn')) {
+            return redirect()->to('/login');
+        }
+
         $model = new WisataModel();
         $perPage = 10; // Number of items per page
 
@@ -206,6 +211,10 @@ class WisataController extends BaseController
         if (empty($data['wisata'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the wisata item: ' . $nama_wisata);
         }
+
+        // Increment visit count
+        $ipAddress = $this->request->getIPAddress();
+        $wisataModel->incrementVisitCount($data['wisata']['wisata_id'], $ipAddress);
 
         return view('wisata_detail', $data);
     }

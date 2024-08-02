@@ -59,6 +59,8 @@ class App extends BaseConfig
      */
     public string $uriProtocol = 'REQUEST_URI';
 
+    public $sessionExpiration = 7200; // 2 hours, for example
+
     /*
     |--------------------------------------------------------------------------
     | Allowed URL Characters

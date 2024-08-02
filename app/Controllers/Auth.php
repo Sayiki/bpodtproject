@@ -24,6 +24,10 @@ class Auth extends BaseController
 
         $admin = $adminModel->where('username', $username)->first();
 
+        if (session()->get('isLoggedIn')) {
+            return redirect()->to(base_url('dashboard'));
+        }
+
         if ($admin) {
             if (password_verify($password, $admin['password'])) {
                 $ses_data = [
@@ -75,7 +79,7 @@ class Auth extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/');
+        return redirect()->to(base_url('/'))->with('message', 'You have been logged out successfully');
     }
 
     private function hashPassword($password)

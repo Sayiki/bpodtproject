@@ -59,20 +59,42 @@ abstract class BaseController extends Controller
 
     private function trackVisit()
     {
-        // Get the current URI
         $uri = service('uri');
+        $request = service('request');
 
-        // Check if we're not on an admin page
+        $currentPath = $uri->getPath();
+        $ipAddress = $request->getIPAddress();
+
+        log_message('debug', 'Attempting to track visit for URI: ' . $currentPath . ' from IP: ' . $ipAddress);
+
         if (!$this->isAdminPage($uri)) {
-            $visitorModel = new VisitorModel();
-            $visitorModel->incrementDailyVisits();
+            $visitorModel = new \App\Models\VisitorModel();
+            $visitorModel->incrementDailyVisits($ipAddress);
+            log_message('debug', 'Visit processed for URI: ' . $currentPath . ' from IP: ' . $ipAddress);
+        } else {
+            log_message('debug', 'Visit not counted - admin page detected for URI: ' . $currentPath);
         }
     }
+    
 
     private function isAdminPage($uri)
     {
-        // Adjust this condition based on your admin URL structure
-        return $uri->getSegment(1) === 'admin' || $uri->getSegment(1) === 'dashboard' || $uri->getSegment(1) === 'form_data' || $uri->getSegment(1) === 'tampil_data';
+        $segments = $uri->getSegments();
+        $segment1 = $segments[0] ?? '';
+        $segment2 = $segments[1] ?? '';
+
+        $excludedPages = ['admin', 'dashboard', 'form_data', 'tampil_data', 'login', 'logout', ''];
+
+        if (in_array($segment1, $excludedPages)) {
+            return true;
+        }
+
+        // Check for "detail/something" pattern
+        if ($segment1 === 'detail' && $segment2 !== '') {
+            return true;
+        }
+
+        return false;
     }
 
 

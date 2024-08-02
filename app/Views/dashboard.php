@@ -26,7 +26,7 @@
 </div>
 
 <?php if (isset($mostVisitedWisata) && !empty($mostVisitedWisata)): ?>
-<h3 class="mt-4">Most Visited Wisata Locations</h3>
+<h3 class="mt-4">Most Visited Attraction Page</h3>
 <table class="table">
     <thead>
         <tr>
