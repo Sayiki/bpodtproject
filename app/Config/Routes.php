@@ -14,6 +14,7 @@ $routes->get('dashboard', 'Auth::dashboard');
 $routes->get('logout', 'Auth::logout');
 $routes->get('check_password_hash', 'Auth::checkPasswordHash');
 $routes->get('test_password_hash', 'Auth::testPasswordHash');
+$routes->get('hash', 'Auth::updateAdminPassword');
 
 $routes->get('form_data', 'WisataController::index');
 $routes->get('tampil_data', 'WisataController::index2');

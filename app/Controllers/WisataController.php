@@ -70,8 +70,8 @@ class WisataController extends BaseController
             'nama_wisata' => 'required',
             'deskripsi_wisata' => 'required',
             'detail_url' => 'required',
-            'peta_wisata' => 'uploaded[peta_wisata]|max_size[peta_wisata,1024]|is_image[peta_wisata]',
-            'gambar_wisata' => 'uploaded[gambar_wisata]|max_size[gambar_wisata,1024]|is_image[gambar_wisata]'
+            'peta_wisata' => 'uploaded[peta_wisata]|is_image[peta_wisata]',
+            'gambar_wisata' => 'uploaded[gambar_wisata]|is_image[gambar_wisata]'
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {

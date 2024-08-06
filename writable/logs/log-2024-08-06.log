@@ -1,0 +1,203 @@
+DEBUG - 2024-08-06 04:33:12 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 04:33:12 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:33:32 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:33:32 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:37:59 --> Attempting to track visit for URI: /bpodtproject/hash from IP: ::1
+DEBUG - 2024-08-06 07:37:59 --> Visit processed for URI: /bpodtproject/hash from IP: ::1
+DEBUG - 2024-08-06 07:38:02 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:38:02 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:38:04 --> Attempting to track visit for URI: /bpodtproject/login from IP: ::1
+DEBUG - 2024-08-06 07:38:04 --> Visit not counted - admin page detected for URI: /bpodtproject/login
+INFO - 2024-08-06 07:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:05 --> Attempting to track visit for URI: /bpodtproject/validate_login from IP: ::1
+DEBUG - 2024-08-06 07:38:05 --> Visit processed for URI: /bpodtproject/validate_login from IP: ::1
+INFO - 2024-08-06 07:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-06 07:38:06 --> Login failed for user: admin
+ERROR - 2024-08-06 07:38:06 --> Provided password: admin999*
+ERROR - 2024-08-06 07:38:06 --> Stored password hash: $2y$10$RF201Xib9Brmnb6JIOUpceLz8FAg2/9Ohcy/I0sFG7VVArYdBGN8.
+DEBUG - 2024-08-06 07:38:06 --> Attempting to track visit for URI: /bpodtproject/login from IP: ::1
+DEBUG - 2024-08-06 07:38:06 --> Visit not counted - admin page detected for URI: /bpodtproject/login
+INFO - 2024-08-06 07:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:11 --> Attempting to track visit for URI: /bpodtproject/validate_login from IP: ::1
+DEBUG - 2024-08-06 07:38:11 --> Visit processed for URI: /bpodtproject/validate_login from IP: ::1
+INFO - 2024-08-06 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:11 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-06 07:38:11 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-06 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:13 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-06 07:38:13 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-06 07:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:13 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:38:13 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:14 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-06 07:38:14 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-06 07:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:15 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:38:15 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:16 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-06 07:38:16 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-06 07:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:38:17 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:38:17 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:41:55 --> Attempting to track visit for URI: /bpodtproject/tambah_data from IP: ::1
+DEBUG - 2024-08-06 07:41:55 --> Visit processed for URI: /bpodtproject/tambah_data from IP: ::1
+INFO - 2024-08-06 07:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:41:56 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:41:56 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:42:22 --> Attempting to track visit for URI: /bpodtproject/tambah_data from IP: ::1
+DEBUG - 2024-08-06 07:42:22 --> Visit processed for URI: /bpodtproject/tambah_data from IP: ::1
+INFO - 2024-08-06 07:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:42:22 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:42:22 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:46:40 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:46:40 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:46:56 --> Attempting to track visit for URI: /bpodtproject/tambah_data from IP: ::1
+DEBUG - 2024-08-06 07:46:56 --> Visit processed for URI: /bpodtproject/tambah_data from IP: ::1
+INFO - 2024-08-06 07:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:46:56 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-06 07:46:56 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-06 07:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:46:57 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-06 07:46:57 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-06 07:46:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:46:58 --> Attempting to track visit for URI: /bpodtproject/wisata/edit/1 from IP: ::1
+DEBUG - 2024-08-06 07:46:58 --> Visit processed for URI: /bpodtproject/wisata/edit/1 from IP: ::1
+DEBUG - 2024-08-06 07:47:02 --> Attempting to track visit for URI: /bpodtproject/logout from IP: ::1
+DEBUG - 2024-08-06 07:47:02 --> Visit not counted - admin page detected for URI: /bpodtproject/logout
+INFO - 2024-08-06 07:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-06 07:47:02 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:47:02 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:47:05 --> Attempting to track visit for URI: /bpodtproject/detail/test from IP: ::1
+DEBUG - 2024-08-06 07:47:05 --> Visit not counted - admin page detected for URI: /bpodtproject/detail/test
+ERROR - 2024-08-06 07:47:05 --> mysqli_sql_exception: Table 'caldera_insight.wisata_visit_log' doesn't exist in C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\bpodtproject\app\Models\WisataModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\bpodtproject\app\Controllers\WisataController.php(217): App\Models\WisataModel->incrementVisitCount('1', '::1')
+#6 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\WisataController->detail('test')
+#7 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WisataController))
+#8 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\bpodtproject\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-08-06 07:47:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'caldera_insight.wisata_visit_log' doesn't exist
+[Method: GET, Route: detail/test]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = :wisata_id:
+AND `ip_address` = :ip_address:
+AND `visit_date` = :visit_date:', [...], false)
+ 2 APPPATH\Models\WisataModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\WisataController.php(217): App\Models\WisataModel->incrementVisitCount('1', '::1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WisataController->detail('test')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WisataController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:47:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'caldera_insight.wisata_visit_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = \'1\'
+AND `ip_address` = \'::1\'
+AND `visit_date` = \'2024-08-06\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = \'1\'
+AND `ip_address` = \'::1\'
+AND `visit_date` = \'2024-08-06\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = :wisata_id:
+AND `ip_address` = :ip_address:
+AND `visit_date` = :visit_date:', [...], false)
+ 4 APPPATH\Models\WisataModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\WisataController.php(217): App\Models\WisataModel->incrementVisitCount('1', '::1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WisataController->detail('test')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WisataController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-06 07:47:05 --> [Caused by] mysqli_sql_exception: Table 'caldera_insight.wisata_visit_log' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = \'1\'
+AND `ip_address` = \'::1\'
+AND `visit_date` = \'2024-08-06\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = \'1\'
+AND `ip_address` = \'::1\'
+AND `visit_date` = \'2024-08-06\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = \'1\'
+AND `ip_address` = \'::1\'
+AND `visit_date` = \'2024-08-06\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `wisata_visit_log`
+WHERE `wisata_id` = :wisata_id:
+AND `ip_address` = :ip_address:
+AND `visit_date` = :visit_date:', [...], false)
+ 5 APPPATH\Models\WisataModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\WisataController.php(217): App\Models\WisataModel->incrementVisitCount('1', '::1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\WisataController->detail('test')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WisataController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-08-06 07:54:39 --> mysqli_sql_exception: Unknown column 'column_name_to_add_after' in 'visitors' in C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('ALTER TABLE `vi...', 0)
+#1 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `vi...')
+#2 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `vi...')
+#3 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `vi...')
+#4 C:\xampp\htdocs\bpodtproject\app\Database\Migrations\2024-08-06-075022_AddIpAddressToVisitorsTable.php(11): CodeIgniter\Database\Forge->addColumn('visitors', Array)
+#5 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddIpAddressToVisitors->up()
+#6 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\bpodtproject\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-08-06 07:57:55 --> mysqli_sql_exception: Duplicate column name 'ip_address' in C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('ALTER TABLE `vi...', 0)
+#1 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('ALTER TABLE `vi...')
+#2 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('ALTER TABLE `vi...')
+#3 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\Forge.php(772): CodeIgniter\Database\BaseConnection->query('ALTER TABLE `vi...')
+#4 C:\xampp\htdocs\bpodtproject\app\Database\Migrations\2024-08-06-075022_AddIpAddressToVisitorsTable.php(18): CodeIgniter\Database\Forge->addColumn('visitors', Array)
+#5 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\AddIpAddressToVisitors->up()
+#6 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\bpodtproject\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2024-08-06 07:58:06 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:58:06 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:58:07 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:58:07 --> Visit not counted - admin page detected for URI: /bpodtproject/
+DEBUG - 2024-08-06 07:58:09 --> Attempting to track visit for URI: /bpodtproject/detail/test from IP: ::1
+DEBUG - 2024-08-06 07:58:09 --> Visit not counted - admin page detected for URI: /bpodtproject/detail/test
+DEBUG - 2024-08-06 07:58:13 --> Attempting to track visit for URI: /bpodtproject/ from IP: ::1
+DEBUG - 2024-08-06 07:58:13 --> Visit not counted - admin page detected for URI: /bpodtproject/
