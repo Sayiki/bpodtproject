@@ -47,6 +47,9 @@
                             <a class="nav-link" href="#testimonials">Testimonials</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#galeri">Galeri</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="<?= base_url('login') ?>">Login Admin</a>
                         </li>
                     </ul>
@@ -74,6 +77,57 @@
             </div>
         </section>
 
+<<<<<<< Updated upstream
+=======
+        <section class="galerywisata py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Galeri Top Caldera</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="public/images/wisata1.jpeg" class="card-img-top" alt="Wisata 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisata 1</h5>
+                                <!-- <p class="card-text">Deskripsi singkat tentang wisata 1.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="public/images/wisata2.jpeg" class="card-img-top" alt="Wisata 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisata 2</h5>
+                                <!-- <p class="card-text">Deskripsi singkat tentang wisata 2.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="public/images/wisata3.jpeg" class="card-img-top" alt="Wisata 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisata 3</h5>
+                                <!-- <p class="card-text">Deskripsi singkat tentang wisata 3.</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Jangkauan Lokasi Wisata</h2>
+                <div class="row">
+                    <p>
+                        Wisata yang masuk dalam jangkauan dari website ini meliputi Wisata Kaldera Toba yang menjadi titik utama pembahasan dari website ini. Lokasi dari wisata ini juga menyangkut wilayah yang sesuai dengan tugas BPODT secara Otoritatif. Lokasi tersebut adalah lokasi-lokasi yang berhubungan langsung dengan wilayah Caldera yang dijadikan sebagai tempat wisata dengan luas yang diketahui yaitu 386,72 ha. Dalam website ini juga nantinya akan selalu melakukan update terhadap situasi yang terbaru terkait wahana yang ada di Caldera dari waktu ke waktu. Dalam konteks wisata, website ini mencoba menghadirkan insight dan info lebih terkait wisata yang ada di Caldera kepada para pengunjung untuk menarik perhatian mereka terhadap keindahan Danau Toba yang terletak persis dengan Caldera. Oleh karena itu jangkauan lokasi wisata yang da di Caldera akan diusahakan ada pada website ini. Terima Kasih dan Sampai Jumpa Di Caldera
+                    </p>
+                </div>
+            </div>
+        </section>
+
+>>>>>>> Stashed changes
         <!-- Data Wisata Section -->
         <section id="datawisata" class="py-5">
             <div class="container">
