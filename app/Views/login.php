@@ -9,6 +9,11 @@
         body {
             background: url('<?= base_url('public/images/bg-lake-toba.jpg') ?>') no-repeat center center fixed;
             background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
         }
         .login-container {
             display: flex;
@@ -35,6 +40,16 @@
         .brand-text span {
             color: #ff0000;
         }
+        .footer {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.5); /* Overlay untuk darken */
+            padding: 10px 0;
+        }
+        .footer p {
+            margin: 0;
+            font-weight: bold; /* Mempertebal teks */
+        }
     </style>
 </head>
 <body>
@@ -59,10 +74,8 @@
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
         </div>
-        <div class="text-center" style="width: 100%;">
-            <p class="text-center text-white h5">
-                © 2024 Badan Pelaksana Otorita Danau Toba (BPODT)
-            </p>
+        <div class="footer">
+            <p>© 2024 Badan Pelaksana Otorita Danau Toba (BPODT)</p>
         </div>
     </div>
     
