@@ -29,7 +29,7 @@ class CreateWisataVisitLog extends Migration
         ]);
 
         $this->forge->addPrimaryKey('id');
-        $this->forge->addUniqueKey('unique_visit', ['wisata_id', 'ip_address', 'visit_date']);
+        $this->forge->addUniqueKey(['wisata_id', 'ip_address', 'visit_date'], 'unique_visit');
         $this->forge->createTable('wisata_visit_log', true);
     }
 

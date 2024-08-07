@@ -9,14 +9,19 @@
         body {
             background: url('<?= base_url('public/images/bg-lake-toba.jpg') ?>') no-repeat center center fixed;
             background-size: cover;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        .login-container {
+        .overlay {
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5); /* Overlay untuk darken */
+            flex: 1;
+            padding: 20px;
         }
         .login-form {
             width: 300px;
@@ -35,10 +40,19 @@
         .brand-text span {
             color: #ff0000;
         }
+        .footer {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0); /* Dark background for footer */
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <div class="login-container">
+    <div class="overlay">
         <div class="brand-text">
             <h1>Caldera <span>Insight</span></h1>
         </div>
@@ -59,11 +73,11 @@
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
         </div>
-        <div class="text-center" style="width: 100%;">
-            <p class="text-center text-white h5">
-                © 2024 Badan Pelaksana Otorita Danau Toba (BPODT)
-            </p>
-        </div>
+    </div>
+    <div class="footer">
+        <p class="text-center text-white h5">
+            © 2024 Badan Pelaksana Otorita Danau Toba (BPODT)
+        </p>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

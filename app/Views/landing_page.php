@@ -98,6 +98,42 @@
         </div>
     </section>
 
+    <!-- Galeri Section -->
+    <section id="galeri" class="galerywisata py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Galeri Top Caldera</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/images/wisata1.jpeg" class="card-img-top" alt="Wisata 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Wisata 1</h5>
+                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 1.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/images/wisata2.jpeg" class="card-img-top" alt="Wisata 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Wisata 2</h5>
+                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 2.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/images/wisata3.jpeg" class="card-img-top" alt="Wisata 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Wisata 3</h5>
+                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 3.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Data Wisata Section -->
     <section id="datawisata" class="py-5">
         <div class="container">
