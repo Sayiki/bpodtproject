@@ -3,6 +3,8 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+use App\Models\WisataModel;
+use App\Models\VisitorModel;
 
 class Auth extends BaseController
 {
@@ -18,12 +20,16 @@ class Auth extends BaseController
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
 
-        
-        
+
+
         $admin = $adminModel->where('username', $username)->first();
-        
-        if($admin){
-            if(password_verify($password, $admin['password'])){
+
+        if (session()->get('isLoggedIn')) {
+            return redirect()->to(base_url('dashboard'));
+        }
+
+        if ($admin) {
+            if (password_verify($password, $admin['password'])) {
                 $ses_data = [
                     'id' => $admin['id'],
                     'username' => $admin['username'],
@@ -31,17 +37,17 @@ class Auth extends BaseController
                 ];
                 $session->set($ses_data);
                 return redirect()->to('/dashboard');
-            
-            }else{
+
+            } else {
                 // Debug information
                 log_message('error', 'Login failed for user: ' . $username);
                 log_message('error', 'Provided password: ' . $password);
                 log_message('error', 'Stored password hash: ' . $admin['password']);
-                
+
                 $session->setFlashdata('msg', 'Password is incorrect.');
                 return redirect()->to('/login');
             }
-        }else{
+        } else {
             $session->setFlashdata('msg', 'Username does not exist.');
             return redirect()->to('/login');
         }
@@ -53,14 +59,27 @@ class Auth extends BaseController
         if (!$session->get('isLoggedIn')) {
             return redirect()->to('/login');
         }
-        return view('dashboard');
+        $wisataModel = new WisataModel();
+        $visitorModel = new VisitorModel();
+
+        $today = date('Y-m-d');
+        $monthAgo = date('Y-m-d', strtotime('-1 month'));
+
+        $data = [
+            'totalWisata' => $wisataModel->getTotalWisata(),
+            'totalVisits' => $visitorModel->getTotalVisits(),
+            'visitsLastMonth' => $visitorModel->getVisitsForDateRange($monthAgo, $today),
+            'mostVisitedWisata' => $wisataModel->getMostVisitedWisata()
+        ];
+        
+        return view('dashboard', $data);
     }
 
     public function logout()
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/login');
+        return redirect()->to(base_url('/'))->with('message', 'You have been logged out successfully');
     }
 
     private function hashPassword($password)
@@ -72,9 +91,9 @@ class Auth extends BaseController
     {
         $adminModel = new AdminModel();
         $admin = $adminModel->find(1); // Assuming the admin id is 1
-        
-        if($admin){
-            $newPassword = 'admin999*'; // This is the password you want to set
+
+        if ($admin) {
+            $newPassword = 'admin999';
             $hashedPassword = $this->hashPassword($newPassword);
             $adminModel->update($admin['id'], ['password' => $hashedPassword]);
             echo "Password updated successfully";
@@ -87,8 +106,8 @@ class Auth extends BaseController
     {
         $adminModel = new AdminModel();
         $admin = $adminModel->find(1); // Assuming the admin id is 1
-        
-        if($admin){
+
+        if ($admin) {
             echo "Current password hash: " . $admin['password'];
         } else {
             echo "Admin not found";

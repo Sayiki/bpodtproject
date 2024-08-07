@@ -9,6 +9,9 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+use App\Models\WisataModel;
+use App\Models\VisitorModel;
+
 /**
  * Class BaseController
  *
@@ -21,6 +24,7 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+
     /**
      * Instance of the main Request object.
      *
@@ -46,13 +50,52 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
     {
-        // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
-        // Preload any models, libraries, etc, here.
-
-        // E.g.: $this->session = \Config\Services::session();
+        $this->trackVisit();
     }
+
+    private function trackVisit()
+    {
+        $uri = service('uri');
+        $request = service('request');
+
+        $currentPath = $uri->getPath();
+        $ipAddress = $request->getIPAddress();
+
+        log_message('debug', 'Attempting to track visit for URI: ' . $currentPath . ' from IP: ' . $ipAddress);
+
+        if (!$this->isAdminPage($uri)) {
+            $visitorModel = new \App\Models\VisitorModel();
+            $visitorModel->incrementDailyVisits($ipAddress);
+            log_message('debug', 'Visit processed for URI: ' . $currentPath . ' from IP: ' . $ipAddress);
+        } else {
+            log_message('debug', 'Visit not counted - admin page detected for URI: ' . $currentPath);
+        }
+    }
+    
+
+    private function isAdminPage($uri)
+    {
+        $segments = $uri->getSegments();
+        $segment1 = $segments[0] ?? '';
+        $segment2 = $segments[1] ?? '';
+
+        $excludedPages = ['admin', 'dashboard', 'form_data', 'tampil_data', 'login', 'logout', ''];
+
+        if (in_array($segment1, $excludedPages)) {
+            return true;
+        }
+
+        // Check for "detail/something" pattern
+        if ($segment1 === 'detail' && $segment2 !== '') {
+            return true;
+        }
+
+        return false;
+    }
+
+
 }

@@ -6,8 +6,6 @@
     <title>Login Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-<<<<<<< Updated upstream
-=======
         body {
             background: url('<?= base_url('public/images/bg-lake-toba.jpg') ?>') no-repeat center center fixed;
             background-size: cover;
@@ -17,18 +15,13 @@
             justify-content: center;
             margin: 0;
         }
->>>>>>> Stashed changes
         .login-container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-<<<<<<< Updated upstream
             height: 100vh;
-=======
-            flex-grow: 1;
             background: rgba(0, 0, 0, 0.5); /* Overlay untuk darken */
-            padding: 20px;
->>>>>>> Stashed changes
         }
         .login-form {
             width: 300px;
@@ -36,6 +29,16 @@
             border: 1px solid #ccc;
             border-radius: 10px;
             background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .brand-text {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .brand-text span {
+            color: #ff0000;
         }
         .footer {
             text-align: center;
@@ -50,9 +53,12 @@
     </style>
 </head>
 <body>
-    <div class="container login-container">
+    <div class="login-container">
+        <div class="brand-text">
+            <h1>Caldera <span>Insight</span></h1>
+        </div>
         <div class="login-form">
-            <h3 class="text-center">Login Admin</h3>
+            <h3 class="text-center">Admin Login</h3>
             <?php if(session()->getFlashdata('msg')): ?>
                 <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
             <?php endif; ?>
@@ -68,14 +74,11 @@
                 <button type="submit" class="btn btn-primary w-100">Login</button>
             </form>
         </div>
-<<<<<<< Updated upstream
-=======
+        <div class="footer">
+            <p>© 2024 Badan Pelaksana Otorita Danau Toba (BPODT)</p>
+        </div>
     </div>
-    <div class="footer">
-        <p>© 2024 Badan Pelaksana Otorita Danau Toba (BPODT)</p>
->>>>>>> Stashed changes
-    </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
