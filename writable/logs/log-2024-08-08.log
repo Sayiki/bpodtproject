@@ -1,0 +1,137 @@
+DEBUG - 2024-08-08 01:58:23 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 01:58:23 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:58:23 --> Attempting to track visit for URI: /bpodtproject/login from IP: ::1
+DEBUG - 2024-08-08 01:58:23 --> Visit not counted - admin page detected for URI: /bpodtproject/login
+INFO - 2024-08-08 01:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:58:25 --> Attempting to track visit for URI: /bpodtproject/validate_login from IP: ::1
+DEBUG - 2024-08-08 01:58:25 --> Visit processed for URI: /bpodtproject/validate_login from IP: ::1
+INFO - 2024-08-08 01:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:58:25 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 01:58:25 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 01:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:59:09 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 01:59:09 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 01:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:59:10 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-08 01:59:10 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-08 01:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 01:59:11 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 01:59:11 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 01:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 02:03:52 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 02:03:52 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 02:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:17:01 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:17:01 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:17:02 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 03:17:02 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 03:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:17:03 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:17:03 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:17:03 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-08 03:17:03 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-08 03:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:28:04 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 03:28:04 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 03:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:28:05 --> Attempting to track visit for URI: /bpodtproject/form_data from IP: ::1
+DEBUG - 2024-08-08 03:28:05 --> Visit not counted - admin page detected for URI: /bpodtproject/form_data
+INFO - 2024-08-08 03:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:28:05 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:28:05 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:28:06 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:28:06 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:28:22 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 03:28:22 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 03:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:40:22 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 03:40:22 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 03:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:40:23 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:40:23 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 03:58:32 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 03:58:32 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 03:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 04:35:51 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 04:35:51 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 04:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-08 08:16:16 --> ErrorException: Undefined variable $data
+[Method: GET, Route: gallery]
+in APPPATH\Views\gallery.php on line 29.
+ 1 APPPATH\Views\gallery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\bpodtproject\\app\\Views\\gallery.php', 29)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\bpodtproject\\app\\Views\\gallery.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('gallery', [], true)
+ 5 APPPATH\Controllers\GalleryController.php(20): view('gallery', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GalleryController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GalleryController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2024-08-08 08:16:19 --> Attempting to track visit for URI: /bpodtproject/tampil_data from IP: ::1
+DEBUG - 2024-08-08 08:16:19 --> Visit not counted - admin page detected for URI: /bpodtproject/tampil_data
+INFO - 2024-08-08 08:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:16:19 --> Attempting to track visit for URI: /bpodtproject/login from IP: ::1
+DEBUG - 2024-08-08 08:16:19 --> Visit not counted - admin page detected for URI: /bpodtproject/login
+INFO - 2024-08-08 08:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-08 08:28:44 --> ErrorException: Cannot declare class App\Database\Migrations\CreateGalleryDataTable, because the name is already in use
+[Method: CLI, Route: migrate]
+in APPPATH\Database\Migrations\2024-08-08-082718_CreateGalleryDataTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-08-08 08:29:33 --> mysqli_sql_exception: Table 'gallery_data' already exists in C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `g...', 0)
+#1 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `g...')
+#2 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `g...')
+#3 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `g...')
+#4 C:\xampp\htdocs\bpodtproject\app\Database\Migrations\2024-08-08-082718_CreateGalleryDataTable.php(33): CodeIgniter\Database\Forge->createTable('gallery_data')
+#5 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateGalleryDataTable->up()
+#6 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\bpodtproject\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2024-08-08 08:29:55 --> mysqli_sql_exception: Table 'gallery_data' already exists in C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `g...', 0)
+#1 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `g...')
+#2 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `g...')
+#3 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `g...')
+#4 C:\xampp\htdocs\bpodtproject\app\Database\Migrations\2024-08-08-082718_CreateGalleryDataTable.php(33): CodeIgniter\Database\Forge->createTable('gallery_data')
+#5 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateGalleryDataTable->up()
+#6 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\bpodtproject\vendor\codeigniter4\framework\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\bpodtproject\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+DEBUG - 2024-08-08 08:30:40 --> Attempting to track visit for URI: /bpodtproject/validate_login from IP: ::1
+DEBUG - 2024-08-08 08:30:40 --> Visit processed for URI: /bpodtproject/validate_login from IP: ::1
+INFO - 2024-08-08 08:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:30:40 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 08:30:40 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 08:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:31:14 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 08:31:14 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 08:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:31:15 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 08:31:15 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 08:31:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:31:17 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 08:31:17 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 08:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-08-08 08:32:49 --> Attempting to track visit for URI: /bpodtproject/dashboard from IP: ::1
+DEBUG - 2024-08-08 08:32:49 --> Visit not counted - admin page detected for URI: /bpodtproject/dashboard
+INFO - 2024-08-08 08:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

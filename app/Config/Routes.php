@@ -26,3 +26,14 @@ $routes->get('wisata/edit/(:num)', 'WisataController::edit/$1');
 $routes->post('wisata/update/(:num)', 'WisataController::update/$1');
 $routes->post('wisata/delete/(:num)', 'WisataController::delete/$1');
 $routes->post('wisata/delete_multiple', 'WisataController::delete_multiple');
+
+$routes->group('api', function ($routes) {
+    $routes->resource('gallery', ['controller' => 'GalleryController']);
+});
+
+$routes->get('gallery', 'GalleryController::index');
+$routes->post('gallery/create', 'GalleryController::create');
+$routes->delete('gallery/delete/(:num)', 'GalleryController::delete/$1');
+$routes->get('gallery/edit/(:num)', 'GalleryController::edit/$1');
+$routes->post('gallery/update/(:num)', 'GalleryController::update/$1');
+$routes->post('gallery/save-order', 'GalleryController::saveOrder');

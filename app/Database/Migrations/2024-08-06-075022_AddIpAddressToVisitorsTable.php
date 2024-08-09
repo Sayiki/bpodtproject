@@ -15,7 +15,10 @@ class AddIpAddressToVisitors extends Migration
                 'null' => true, // adjust based on your requirements
             ],
         ];
-        $this->forge->addColumn('visitors', $fields);
+
+        if (!$this->db->fieldExists('ip_address', 'visitors')) {
+            $this->forge->addColumn('visitors', $fields);
+        }
     }
 
     public function down()
