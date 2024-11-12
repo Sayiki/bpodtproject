@@ -12,8 +12,111 @@ class GalleryController extends ResourceController
 
     public function index()
     {
-        $data = $this->model->findAll();
-        return view('gallery', ['data' => $data]);
+        $model = new GalleryModel();
+
+        // Set the number of items per page
+        $perPage = 4;
+
+        // Get the current page from the URL, default to 1 if not set
+        $page = $this->request->getVar('page') ?? 1;
+
+        // Get the total count of gallery items
+        $totalItems = $model->countAllResults();
+
+        // Get paginated data
+        $data = $model->paginate($perPage, 'default', $page);
+
+        // Create the pager object
+        $pager = $model->pager;
+
+        $topGalleryItems = $model->getTopThree();
+
+        return view('gallery', [
+            'data' => $data,
+            'pager' => $pager,
+            'totalItems' => $totalItems,
+            'topGalleryItems' => $topGalleryItems
+        ]);
+    }
+
+    public function setHome()
+    {
+        $model = new GalleryModel();
+        $ids = $this->request->getJSON()->ids;
+
+        if (count($ids) > 3 || count($ids) < 1) {
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'You must select between 1 and 3 items for the home gallery.'
+            ]);
+        }
+
+        try {
+            $model->resetHomeGallery();
+            foreach ($ids as $id) {
+                $model->setHomeGallery($id);
+            }
+            return $this->response->setJSON([
+                'success' => true,
+                'message' => 'Home gallery items set successfully'
+            ]);
+        } catch (\Exception $e) {
+            log_message('error', 'Error setting home gallery: ' . $e->getMessage());
+            return $this->response->setJSON([
+                'success' => false,
+                'message' => 'Failed to set home gallery items'
+            ]);
+        }
+    }
+    public function setFeatured()
+    {
+        $model = new GalleryModel();
+        $id = $this->request->getPost('id');
+        $isFeatured = $this->request->getPost('is_featured');
+
+        // Check if we already have 3 featured images
+        $featuredCount = $model->where('is_featured', 1)->countAllResults();
+
+        if ($isFeatured && $featuredCount >= 3) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Maximum of 3 featured images allowed']);
+        }
+
+        if ($model->update($id, ['is_featured' => $isFeatured])) {
+            return $this->response->setJSON(['success' => true]);
+        } else {
+            return $this->response->setJSON(['success' => false, 'message' => 'Failed to update featured status']);
+        }
+    }
+
+    public function manageFeatured()
+    {
+        $model = new GalleryModel();
+        $data['galleries'] = $model->findAll();
+        return view('gallery_manage_featured', $data);
+    }
+
+    public function updateFeatured()
+    {
+        $model = new GalleryModel();
+        $featuredIds = $this->request->getPost('featured');
+
+        // Start a transaction
+        $model->db->transStart();
+
+        // Reset all to not featured
+        $model->where('1=1')->update(null, ['is_featured' => 0]);
+
+        // Update selected as featured
+        if (is_array($featuredIds) && count($featuredIds) <= 3) {
+            foreach ($featuredIds as $id) {
+                $model->update($id, ['is_featured' => 1]);
+            }
+            $model->db->transComplete();
+            return redirect()->to('gallery/manage-featured')->with('success', 'Featured galleries updated successfully');
+        } else {
+            $model->db->transRollback();
+            return redirect()->to('gallery/manage-featured')->with('error', 'Please select up to 3 galleries');
+        }
     }
 
     public function create()
@@ -28,7 +131,7 @@ class GalleryController extends ResourceController
         ];
 
         if (!$this->validate($validationRule)) {
-            return $this->response->setJSON(['error' => $this->validator->getErrors()]);
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $image = $this->request->getFile('image');
@@ -44,15 +147,15 @@ class GalleryController extends ResourceController
                 ];
 
                 if ($this->model->insert($data)) {
-                    return $this->response->setJSON(['success' => true, 'message' => 'Gallery item added successfully']);
+                    return redirect()->to('gallery')->with('success', 'Gallery item added successfully');
                 } else {
-                    return $this->response->setJSON(['error' => 'Failed to insert data into database']);
+                    return redirect()->back()->withInput()->with('error', 'Failed to insert data into database');
                 }
             } else {
-                return $this->response->setJSON(['error' => 'Failed to move uploaded file']);
+                return redirect()->back()->withInput()->with('error', 'Failed to move uploaded file');
             }
         } else {
-            return $this->response->setJSON(['error' => 'Invalid file or file has already been moved']);
+            return redirect()->back()->withInput()->with('error', 'Invalid file or file has already been moved');
         }
     }
 
@@ -140,5 +243,10 @@ class GalleryController extends ResourceController
         } else {
             return $this->response->setJSON(['success' => false, 'message' => 'Gallery item not found']);
         }
+    }
+
+    public function add()
+    {
+        return view('gallery_add');
     }
 }

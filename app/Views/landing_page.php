@@ -31,6 +31,14 @@
             width: 100%;
             height: 500px;
         }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            /* Set a fixed height */
+            object-fit: cover;
+            /* Ensure images cover the area while maintaining aspect ratio */
+        }
     </style>
 </head>
 
@@ -103,36 +111,22 @@
         <div class="container">
             <h2 class="text-center mb-5">Galeri Top Caldera</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="public/images/wisata1.jpeg" class="card-img-top" alt="Wisata 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Wisata 1</h5>
-                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 1.</p> -->
+                <?php foreach ($topGalleryItems as $item): ?>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <!-- Prepend 'uploads/' to the image path -->
+                            <img src="<?= base_url('public/' . $item['image']) ?>" class="card-img-top"
+                                alt="<?= $item['title'] ?>">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $item['title'] ?></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="public/images/wisata2.jpeg" class="card-img-top" alt="Wisata 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Wisata 2</h5>
-                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 2.</p> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="public/images/wisata3.jpeg" class="card-img-top" alt="Wisata 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Wisata 3</h5>
-                            <!-- <p class="card-text">Deskripsi singkat tentang wisata 3.</p> -->
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
+
 
     <!-- Data Wisata Section -->
     <section id="datawisata" class="py-5">

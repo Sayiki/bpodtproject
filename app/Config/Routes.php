@@ -18,6 +18,7 @@ $routes->get('hash', 'Auth::updateAdminPassword');
 
 $routes->get('form_data', 'WisataController::index');
 $routes->get('tampil_data', 'WisataController::index2');
+$routes->get('tampil_data/(:num)', 'WisataController::index2/$1');
 $routes->post('tambah_data', 'WisataController::tambahData');
 
 $routes->get('detail/(:segment)', 'WisataController::detail/$1');
@@ -37,3 +38,6 @@ $routes->delete('gallery/delete/(:num)', 'GalleryController::delete/$1');
 $routes->get('gallery/edit/(:num)', 'GalleryController::edit/$1');
 $routes->post('gallery/update/(:num)', 'GalleryController::update/$1');
 $routes->post('gallery/save-order', 'GalleryController::saveOrder');
+$routes->get('gallery/add', 'GalleryController::add');
+$routes->get('gallery/manage-featured', 'GalleryController::manageFeatured');
+$routes->post('gallery/update-featured', 'GalleryController::updateFeatured');

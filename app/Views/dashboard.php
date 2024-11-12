@@ -1,48 +1,32 @@
-<!-- app/Views/dashboard.php -->
 <?= $this->extend('layout') ?>
 
 <?= $this->section('content') ?>
-<div class="container mt-5">
-    <h1>Welcome to Admin Dashboard - Caldera Insight</h1>
-    <h2>Dashboard Statistics</h2>
-
-<div class="row">
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Total Wisata Locations</h5>
-                <p class="card-text"><?= $totalWisata ?? 'N/A' ?></p>
+<div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Welcome to Admin Dashboard - Caldera Insight</h1>
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-semibold mb-4">Dashboard Statistics</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-blue-100 rounded-lg p-4">
+                <h5 class="text-xl font-semibold mb-2">Total Wisata Locations</h5>
+                <p class="text-3xl font-bold text-blue-600"><?= $totalWisata ?? 'N/A' ?></p>
+            </div>
+            <div class="bg-green-100 rounded-lg p-4">
+                <h5 class="text-xl font-semibold mb-2">Total Site Visits</h5>
+                <p class="text-3xl font-bold text-green-600"><?= $totalVisits ?? 'N/A' ?></p>
             </div>
         </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Total Site Visits</h5>
-                <p class="card-text"><?= $totalVisits ?? 'N/A' ?></p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<?php if (isset($mostVisitedWisata) && !empty($mostVisitedWisata)): ?>
-<h3 class="mt-4">Most Visited Attraction Page</h3>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Wisata Name</th>
-            <th>Visit Count</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($mostVisitedWisata as $wisata): ?>
-        <tr>
-            <td><?= $wisata['nama_wisata'] ?></td>
-            <td><?= $wisata['visit_count'] ?></td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
-<?php endif; ?>
+        <?php if (isset($mostVisitedWisata) && !empty($mostVisitedWisata)): ?>
+        <h3 class="text-xl font-semibold mt-8 mb-4">Most Visited Attraction Pages</h3>
+        <ul class="space-y-4">
+            <?php foreach ($mostVisitedWisata as $wisata): ?>
+            <li class="flex items-center justify-between bg-gray-50 p-4 rounded">
+                <span class="font-semibold"><?= $wisata['nama_wisata'] ?></span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-full"><?= $wisata['visit_count'] ?> visits</span>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
+    </div>
 </div>
 <?= $this->endSection() ?>

@@ -27,6 +27,12 @@ class CreateGalleryDataTable extends Migration
                 'type' => 'INT',
                 'constraint' => 11,
                 'unsigned' => true
+            ],
+            'is_featured' => [
+                'type' => 'TINYINT',
+                'constraint' => 1,
+                'unsigned' => true,
+                'default' => 0 
             ]
         ]);
         $this->forge->addKey('id', true);
