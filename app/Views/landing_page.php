@@ -72,7 +72,7 @@
 
     <!-- Hero Section -->
     <section class="hero"
-        style="background-image: url('public/images/bg-lake-toba.jpg'); background-size: cover; background-position: center;">
+        style="background-image: url('<?= base_url('images/bg-lake-toba.jpg') ?>'); background-size: cover; background-position: center;">
         <div class="container">
             <h1>Selamat Datang di <span style="color: #ffffff;">Caldera</span> <span
                     style="color: #ff0000;">Insight</span></h1>
@@ -114,8 +114,8 @@
                 <?php foreach ($topGalleryItems as $item): ?>
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <!-- Prepend 'uploads/' to the image path -->
-                            <img src="<?= base_url('public/' . $item['image']) ?>" class="card-img-top"
+                            <!-- Gallery paths are stored relative to the public/ directory -->
+                            <img src="<?= base_url($item['image']) ?>" class="card-img-top"
                                 alt="<?= $item['title'] ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><?= $item['title'] ?></h5>
